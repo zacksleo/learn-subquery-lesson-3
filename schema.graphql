@@ -1,0 +1,23 @@
+type StackingReward @entity {
+
+  id: ID! #id is a required field
+
+  address: String!
+
+  balance: BigInt!
+
+  date: Date!
+}
+
+type Block @entity {
+
+    id: ID! #id is a required field
+
+    number: Int!
+
+    hash: String!
+
+    parentHash: String!
+
+    timestamp: Date!
+}
