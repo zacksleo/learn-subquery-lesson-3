@@ -11,7 +11,9 @@ network:
   dictionary: 'https://api.subquery.network/sq/subquery/dictionary-polkadot'
 dataSources:
   - kind: substrate/Runtime
-    startBlock: 1
+    # startBlock: for testing
+    # https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/explorer/query/8099664
+    startBlock: 8099663
     mapping:
       file: ./dist/index.js
       handlers:
